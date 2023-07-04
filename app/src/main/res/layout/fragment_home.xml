@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment"
+    android:padding="15dp"
+    android:background="#03A9F4">
+    <TextView
+    android:id="@+id/tv_surplus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="40sp"
+    android:textColor="#F2F2FA"
+    android:text="Surplus: "
+        android:textStyle="bold"
+        android:typeface="serif"
+    android:drawableStart="@drawable/ic_action_wallet" />
+    <TextView
+        android:id="@+id/tv_Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#F2F2FA"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_toRightOf="@id/tv_surplus"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_renevue"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Renevue: "
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#F2F2FA"
+        android:layout_below="@id/tv_surplus"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/money_revenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#F2F2FA"
+        android:layout_below="@id/tv_surplus"
+        android:layout_toRightOf="@id/tv_renevue"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_expense"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Expense: "
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#F2F2FA"
+        android:layout_below="@id/tv_renevue"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/money_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#F2F2FA"
+        android:layout_below="@id/tv_renevue"
+        android:layout_toRightOf="@id/tv_expense"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.expense.ExpenseTypeFragment"
+    android:padding="10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcV_expense_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_expense_type_add"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/rcV_expense_type"
+        android:text="Add"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:drawableStart="@drawable/ic_action_add"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
